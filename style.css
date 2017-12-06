@@ -40,6 +40,50 @@ a:hover {
   border: 1px solid white;
 }
 
+.cv {
+  width: 892px;
+  height: 1263px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.horizontal {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+}
+
+.vertical {
+  width: 30%;
+  height: 80%;
+  background-color: lightgrey;
+}
+
+#cvpic {
+  position: relative;
+  margin: 15px;
+  margin-left: 20px;
+  margin-right: 40px;
+  float: left;
+  width: 220px;
+  border-radius: 10px;
+}
+
+#cvname {
+  position: relative;
+  width: 600px;
+  float: left;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+#bio {
+  padding-right: 20px;
+  color: white;
+}
+
 .fa {
   font-size: 20px;
 }
