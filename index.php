@@ -216,6 +216,7 @@
             <img class="img-thumbnail img-responsive" src="tic-tac-toe3.png" onclick="zoom(tic-tac-toe,2)" alt="tic-tac-toe">
           </div>
         </div>
+				
       </div>
       <!--CONTACT-->
       <div id="scroll-contact">
