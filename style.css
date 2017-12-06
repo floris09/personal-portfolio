@@ -364,7 +364,7 @@ img.hover-shadow {
   }
   .navbar-fixed-top {
     height: 100px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .navbar-nav li {
@@ -380,5 +380,12 @@ img.hover-shadow {
     margin-top: 0;
   }
 
+  #bio {
+    font-size: 20px;
+  }
 
+  #cvname {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
 }
