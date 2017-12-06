@@ -24,6 +24,7 @@
 			var blv = ['<img src=blv1.png />','<img src=blv2.png />','<img src=blv3.png />'];
 			var evaluation = ['<img src=evaluation1.png />','<img src=evaluation2.png />','<img src=evaluation3.png />'];
 			var matcher = ['<img src=matcher1.png />','<img src=matcher2.png />','<img src=matcher3.png />'];
+			var tic-tac-toe = ['<img src=tic-tac-toe.png />','<img src=tic-tac-toe2.png />','<img src=tic-tac-toe3.png />'];
 
 			function zoom(arr,n){
 			var count = n;
@@ -195,6 +196,24 @@
           </div>
           <div class="col-sm-4">
             <img class="img-thumbnail img-responsive" src="matcher3.png" onclick="zoom(matcher,2)" alt="Student matcher">
+          </div>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <h4>Multiplayer Tic-Tac-Toe</h4>
+        <p>This is a web-app built using React with an Express back-end. People can login and join eachother in a real-time game of tic-tac-toe. You can play it online <a href="https://tic-tac-toe.codaisseur.cloud" target="_blank">here</a>. Check out the Github repository <a href="https://github.com/aljazskrinjar/react-game-starter" target="_blank">here</a>.</p>
+
+        <div class="row">
+         <div class="col-sm-4">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe.png" onclick="zoom(tic-tac-toe,0)" alt="tic-tac-toe">
+          </div>
+          <div class="col-sm-4">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe2.png" onclick="zoom(tic-tac-toe,1)" alt="tic-tac-toe">
+          </div>
+          <div class="col-sm-4">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe3.png" onclick="zoom(tic-tac-toe,2)" alt="tic-tac-toe">
           </div>
         </div>
       </div>
