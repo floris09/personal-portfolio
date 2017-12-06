@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box: border-box;
+}
+
+body {
+  margin-top: 40px;
+  margin-bottom: 0;
+  background: url(mountains2.jpg)fixed;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+a {
+  color: rgb(73,181,253);
+}
+
+a:hover {
+  color: black;
+}
+
+#home {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.whitebox {
+  background: rgba(255,255,255,0.7);
+  padding: 40px 20px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.social {
+  display: inline;
+}
+
+.social .fa{
+  font-size: 50px;
+  margin: 0;
+}
+
+.contact i {
+  font-size: 40px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+#profilepic {
+  margin-top: 10px;
+  box-shadow: 4px 6px 6px white;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+  font-family: "Kaushan Script", cursive;
+}
+
+h2 {
+  font-family: "Basic", sans-serif;
+}
+
+h3 {
+  font-family: "Basic", sans-serif;
+  margin-top: 40px;
+}
+
+p {
+  font-family: "Basic", sans-serif;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+#portfolio {
+  margin: 40px;
+  margin-top: 60px;
+  border-bottom: 1px solid black;
+}
+
+.img-thumbnail {
+  margin-bottom: 20px;
+}
+
+#contact {
+  margin: 20px;
+  margin-top: 60px;
+  border-bottom: 1px solid black;
+}
+
+.input {
+  padding: 3px;
+  height: 30px;
+  width: 90%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.input:active {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid black;
+}
+
+.btn-sm {
+  border: 1px solid black;
+  color: rgba(0,0,0,0.3);
+}
+
+.btn-sm:hover {
+  color: none;
+  border: 1px solid black;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+#end {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#copyright {
+  color: black;
+  font-size: 8px;
+  margin: auto;
+}
+
+/*---------------- MODAL ------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#modalimg img{
+  width: 70%;
+}
+
+#modalimg {
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: blue;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-size: 35px;
+  font-weight: bold;
+  display: none;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(73,181,253);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 15%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+img.hover-shadow {
+  transition: 0;
+  position: static;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 4px  white, 0 4px 4px  white;
+  cursor: pointer;
+}
+
+#phone-logo {
+  display: none;
+}
+
+/*-----------------RESPONSIVE--------------------*/
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 30px;
+  }
+  #phone-number {
+    display: none;
+  }
+  #phone-logo {
+    display: inline;
+  }
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(mountains2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .navbar-fixed-top {
+    height: 100px;
+    font-size: 40px;
+  }
+
+  .navbar-nav li {
+    margin-top: 20px;
+  }
+
+  .navbar-nav .fa {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+
+  .navbar-nav .fa-instagram {
+    margin-top: 0;
+  }
+
+
+}
