@@ -5,82 +5,15 @@
 	<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Kaushan+Script|Righteous|Spectral+SC|Vollkorn+SC|Yellowtail|Basic" rel="stylesheet">
-  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  		<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  	<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" href=logo.png>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  		<title>Floris Meininger</title>
+  	<title>Floris Meininger</title>
 
  	</head>
 
   <body>
-
-		<script>
-			var blv = ['<img src=blv1.png />','<img src=blv2.png />','<img src=blv3.png />'];
-			var evaluation = ['<img src=evaluation1.png />','<img src=evaluation2.png />','<img src=evaluation3.png />'];
-			var matcher = ['<img src=matcher1.png />','<img src=matcher2.png />','<img src=matcher3.png />'];
-			var tic-tac-toe = ['<img src=tic-tac-toe.png />','<img src=tic-tac-toe2.png />','<img src=tic-tac-toe3.png />'];
-
-			function zoom(arr,n){
-			var count = n;
-			var pics = arr;
-			$('.modal').css('display','block');
-			$('.close').css('display','block');
-
-			$('#modalimg').html(pics[count]);
-
-			$('.next').click(function(){
-			  count++;
-				if (count == pics.length) {
-					count = 0;
-				};
-				$('#modalimg').html(pics[count]);
-			});
-
-			$('.prev').click(function(){
-				if (count == 0) {
-					count = pics.length;
-				};
-				count--;
-				$('#modalimg').html(pics[count]);
-			});
-
-			$(document).keydown(function(e){
-			if (e.which == 39) {
-				count++;
-				if (count == pics.length) {
-					count = 0;
-				};
-				$('#modalimg').html(pics[count]);
-			} else if (e.which == 37) {
-				if (count == 0) {
-					count = pics.length;
-				};
-				count--;
-				$('#modalimg').html(pics[count]);
-			} else if (e.which == 27) {
-				$('.modal').css('display','none');
-				$('.close').css('display','none');
-				$('#modelimg').css('display','none');
-			};
-			});
-
-			$('.close').click(function(){
-				$('.modal').css('display','none');
-				$('.close').css('display','none');
-				$('#modelimg').css('display','none');
-			});
-
-			};
-
-			function myFunction(x) {
-			    x.classList.toggle("change");
-			    $('.dropdown').toggle(300);
-			}
-
-</script>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -204,13 +137,13 @@
 
         <div class="row">
          <div class="col-sm-4">
-            <img class="img-thumbnail img-responsive" src="tic-tac-toe.png" onclick="zoom(tic-tac-toe,0)" alt="tic-tac-toe">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe.png" onclick="zoom(tictactoe,0)" alt="tic-tac-toe">
           </div>
           <div class="col-sm-4">
-            <img class="img-thumbnail img-responsive" src="tic-tac-toe2.png" onclick="zoom(tic-tac-toe,1)" alt="tic-tac-toe">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe2.png" onclick="zoom(tictactoe,1)" alt="tic-tac-toe">
           </div>
           <div class="col-sm-4">
-            <img class="img-thumbnail img-responsive" src="tic-tac-toe3.png" onclick="zoom(tic-tac-toe,2)" alt="tic-tac-toe">
+            <img class="img-thumbnail img-responsive" src="tic-tac-toe3.png" onclick="zoom(tictactoe,2)" alt="tic-tac-toe">
           </div>
         </div>
 
@@ -258,3 +191,73 @@
 
       </div>
     </div>
+
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script defer>
+			var blv = ['<img src=blv1.png />','<img src=blv2.png />','<img src=blv3.png />'];
+			var evaluation = ['<img src=evaluation1.png />','<img src=evaluation2.png />','<img src=evaluation3.png />'];
+			var matcher = ['<img src=matcher1.png />','<img src=matcher2.png />','<img src=matcher3.png />'];
+			var tictactoe = ['<img src=tic-tac-toe.png />','<img src=tic-tac-toe2.png />','<img src=tic-tac-toe3.png />'];
+
+			function zoom(arr,n){
+			var count = n;
+			var pics = arr;
+			$('.modal').css('display','block');
+			$('.close').css('display','block');
+
+			$('#modalimg').html(pics[count]);
+
+			$('.next').click(function(){
+			  count++;
+				if (count == pics.length) {
+					count = 0;
+				};
+				$('#modalimg').html(pics[count]);
+			});
+
+			$('.prev').click(function(){
+				if (count == 0) {
+					count = pics.length;
+				};
+				count--;
+				$('#modalimg').html(pics[count]);
+			});
+
+			$(document).keydown(function(e){
+			if (e.which == 39) {
+				count++;
+				if (count == pics.length) {
+					count = 0;
+				};
+				$('#modalimg').html(pics[count]);
+			} else if (e.which == 37) {
+				if (count == 0) {
+					count = pics.length;
+				};
+				count--;
+				$('#modalimg').html(pics[count]);
+			} else if (e.which == 27) {
+				$('.modal').css('display','none');
+				$('.close').css('display','none');
+				$('#modelimg').css('display','none');
+			};
+			});
+
+			$('.close').click(function(){
+				$('.modal').css('display','none');
+				$('.close').css('display','none');
+				$('#modelimg').css('display','none');
+			});
+
+			};
+
+			function myFunction(x) {
+			    x.classList.toggle("change");
+			    $('.dropdown').toggle(300);
+			}
+
+		</script>
+	</body>
+</html>
