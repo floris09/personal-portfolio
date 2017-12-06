@@ -87,21 +87,21 @@ a:hover {
   color: white;
 }
 
-#skills {
+.skills {
   padding-top: 20px;
   font-size: 40px;
   border-bottom: 2px solid black;
   width: 80%;
 }
 
-#cvlist {
+.cvlist {
   list-style:  none;
   font-family: "Basic", sans-serif;
   font-size: 20px;
   margin-top: 20px;
 }
 
-#cvlist li {
+.cvlist li {
   margin-bottom: 7px;
 }
 
@@ -157,7 +157,7 @@ p {
 
 #portfolio {
   margin: 40px;
-  margin-top: 60px;
+  margin-top: 40px;
   border-bottom: 1px solid black;
 }
 
@@ -165,9 +165,16 @@ p {
   margin-bottom: 20px;
 }
 
-#contact {
+#contact{
   margin: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
+  border-bottom: 1px solid black;
+}
+
+#cv{
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   border-bottom: 1px solid black;
 }
 
