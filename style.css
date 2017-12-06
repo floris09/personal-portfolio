@@ -178,6 +178,10 @@ p {
   border-bottom: 1px solid black;
 }
 
+.cvlist i {
+  font-size: 40px;  
+}
+
 .input {
   padding: 3px;
   height: 30px;
