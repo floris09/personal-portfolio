@@ -427,6 +427,10 @@ img.hover-shadow {
     margin-bottom: 5px;
   }
 
+  #cv p {
+    font-size: 17px;
+  }
+
   .prev,
   .next {
     font-size: 40px;
