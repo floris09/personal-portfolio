@@ -27,10 +27,10 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#scroll-portfolio">Portfolio</a></li>
-            <li><a href="#scroll-cv">CV</a></li>
-            <li><a href="#scroll-contact">Contact</a></li>
+            <li><a onclick="scrollAbout()">About</a></li>
+            <li><a onclick="scrollPortfolio()">Portfolio</a></li>
+            <li><a onclick="scrollCV()">CV</a></li>
+            <li><a onclick="scrollContact()">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a target="_blank"  href="https://www.facebook.com/floris.meininger"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
@@ -74,15 +74,15 @@
 			<div id=modalimg></div>
 		</div>
 
-    <div id="scroll-portfolio">
+
     </div>
     <div class="whitebox">
       <div class="row">
       <h2 id=portfolio class=text-center>Portfolio</h2>
         </div>
-
           <h4>Bali Eve Wedding & Event Planner</h4>
           <p>After learning how to code online, this was the first website I deployed. For this website I used HTML, CSS, Javascipt, JQuery and a bit of PHP. You can check it online <a href="https://balieveplanner.com" target="_blank">here</a>.</p>
+					<div id="scroll-portfolio"></div>
           <div class="row">
             <div class="col-sm-4">
               <img class="img-thumbnail img-responsive" src="blv1.png" onclick="zoom(blv,0)" alt="Wedding planner website">
@@ -151,8 +151,8 @@
       </div>
 
 			<!-- CV -->
-			<div id="scroll-cv"></div>
 			<div class="whitebox">
+				<div id="scroll-cv"></div>
 				<h2 id="cvheader" class="text-center">CV</h2>
 				<div id="cv">
 					<div class="horizontal">
@@ -219,8 +219,8 @@
 				</div>
 			</div>
 
+
       <!--CONTACT-->
-      <div id="scroll-contact">
       </div>
       <div class="whitebox contact">
         <div class="row">
@@ -261,6 +261,7 @@
           </form> -->
 
       </div>
+			<div id="scroll-contact">
     </div>
 
 		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -343,6 +344,29 @@
 
 			};
 
+			function scrollAbout(){
+				document.querySelector('#about').scrollIntoView({
+				  behavior: 'smooth'
+				});
+			};
+
+			function scrollPortfolio(){
+				document.querySelector('#scroll-portfolio').scrollIntoView({
+				  behavior: 'smooth'
+				});
+			};
+
+			function scrollCV(){
+				document.querySelector('#scroll-cv').scrollIntoView({
+				  behavior: 'smooth'
+				});
+			};
+
+			function scrollContact(){
+				document.querySelector('#scroll-contact').scrollIntoView({
+				  behavior: 'smooth'
+				});
+			};
 
 		</script>
 	</body>

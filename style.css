@@ -4,8 +4,10 @@
   box: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+
+#scroll-cv {
+  position: absolute;
+  top: 3300px;
 }
 
 body {
