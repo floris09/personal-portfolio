@@ -4,12 +4,6 @@
   box: border-box;
 }
 
-
-#scroll-cv {
-  position: absolute;
-  top: 3300px;
-}
-
 body {
   margin-top: 40px;
   margin-bottom: 0;
